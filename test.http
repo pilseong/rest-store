@@ -1,0 +1,77 @@
+### for stores
+GET http://localhost:5000/store
+
+###
+GET http://localhost:5000/store/1
+
+###
+POST http://localhost:5000/store
+Content-Type: application/json
+
+{
+  "name": "Philip Store"
+}
+
+###
+DELETE http://localhost:5000/store/1
+
+
+
+
+### for items
+POST http://localhost:5000/item
+Content-Type: application/json
+
+{
+  "store_id": "e79250795365471b9ed79738e32201e2",
+  "name": "Table",
+  "price": 19.99
+}
+
+###
+POST http://localhost:5000/item
+Content-Type: application/json
+
+{
+  "store_id": 1,
+  "name": "Light",
+  "price": 14.55
+}
+
+###
+PUT http://localhost:5000/item/1
+Content-Type: application/json
+
+{
+  "name": "Chair",
+  "price": 10
+}
+
+###
+PUT http://localhost:5000/item/1
+Content-Type: application/json
+
+{
+  "name": "Chair",
+  "price": 10
+}
+
+###
+GET http://localhost:5000/item
+
+###
+GET http://localhost:5000/item/1
+
+###
+DELETE http://localhost:5000/item/1
+
+
+### about tag
+GET http://localhost:5000/tag/1
+
+###
+GET http://localhost:5000/store/1/tag
+
+###
+POST http://localhost:5000/store/1/tag
+Content-Type: application/json 
